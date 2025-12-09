@@ -48,7 +48,7 @@ onMounted(() => {
         </p>
         <div class="flex gap-3">
             <Button :text="'Get Started'"/>
-            <Button class="bg-black border border-[#FCFCFC3B]" :text="'See Details'"/>
+            <Button class="bg-black border border-[#FCFCFC3B] !hover:bg-[#FF541F]" :text="'See Details'"/>
         </div>
     </section>
     <div class="w-[3rem] h-[3rem] flex justify-center items-center z-1 cursor-pointer bg-[#FF541F] rounded-full fixed bottom-3 right-3" @click.prevent="scrollToElement('headerID')"><span class="text-2xl font-extrabold text-white"> ↑</span></div>
