@@ -24,6 +24,7 @@ const props=defineProps({
     flex
     justify-center
     items-center
+    cursor-pointer
     ">
         <span class="text-[0.5rem] md:text-[1rem] ">{{ props.text }}</span>
     </button>

@@ -1,5 +1,27 @@
 <script setup>
+import { onMounted } from 'vue'
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(()=>{
+  gsap.from('.features',{
+    scrollTrigger: {
+      trigger: ".featuresGsap",
+      start: "top 65%",
+      toggleActions: "play none none none"
+      // play = scroll-a çatanda animasiya et
+      // none = başqa heç nə etmə
+    },
+    duration: 0.9,
+    scale: 0.8,
+    opacity: 0,
+    y: 20,
+    stagger: 0.18,
+    ease: 'power3.out'
+  })
+})
 </script>
 
 <template>
@@ -18,7 +40,7 @@
                 </div>
                 <img class="w-[9.5rem] h-[9.5rem]" src="../assets/Images/rombusIcon.png" alt="">
             </div>
-            <div class="p-4">
+            <div class="p-4 featuresGsap">
                 <!-- <div class="parent text-teal-50">
                     <div class="div1 flex p-4 rounded-[1.25rem]  bg-[linear-gradient(164deg,rgba(39,40,41,1)_0%,rgba(39,40,41,1)_62%,rgba(255,60,0,1)_100%)] ">
                         <div>
@@ -78,65 +100,65 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-white">
+                <div class="features grid grid-cols-1 md:grid-cols-5 gap-3 text-white">
     
-    <!-- BOX 1 -->
-    <div class="col-span-1 md:col-span-2 px-4 py-6 rounded-[1.25rem] 
-                bg-[linear-gradient(164deg,rgba(39,40,41,1)_0%,rgba(39,40,41,1)_62%,rgba(255,60,0,1)_100%)] flex">
-        <div class="flex-1">
-            <p class="text-[0.7rem] lg:text-[1rem] text-[#D9D9D9D9]">
-                Skip the blank canvas and spark creativity instantly.
-                Our AI generates high-quality, on-brand design concepts within seconds
-            </p>
-            <h4 class="text-[1.2rem] md:text-[1.7rem] lg:text-[2.125rem]">
-                Instant Ideation
-            </h4>
-        </div>
-        <img src="../assets/Images/Background.png" class="w-[4rem] h-[4rem]" />
-    </div>
+                    <!-- BOX 1 -->
+                    <div class="col-span-1 md:col-span-2 px-4 py-6 rounded-[1.25rem] 
+                                bg-[linear-gradient(164deg,rgba(39,40,41,1)_0%,rgba(39,40,41,1)_62%,rgba(255,60,0,1)_100%)] flex">
+                        <div class="flex-1">
+                            <p class="text-[0.7rem] lg:text-[1rem] text-[#D9D9D9D9]">
+                                Skip the blank canvas and spark creativity instantly.
+                                Our AI generates high-quality, on-brand design concepts within seconds
+                            </p>
+                            <h4 class="text-[1.2rem] md:text-[1.7rem] lg:text-[2.125rem]">
+                                Instant Ideation
+                            </h4>
+                        </div>
+                        <img src="../assets/Images/Background.png" class="w-[4rem] h-[4rem]" />
+                    </div>
 
-    <!-- BOX 2 -->
-    <div class="col-span-1 md:col-span-3 px-4 py-6 rounded-[1.25rem] bg-[#272829B2] flex">
-        <div class="flex-1">
-            <p class="text-[0.7rem] lg:text-[1rem] text-[#D9D9D9D9]">
-                No two creators are the same, and neither are their styles. 
-                Our AI learns from your inputs...
-            </p>
-            <h4 class="text-[1.2rem] md:text-[1.7rem] lg:text-[2.125rem]">
-                Smart Adaptability
-            </h4>
-        </div>
-        <img src="../assets/Images/Background.png" class="w-[4rem] h-[4rem]" />
-    </div>
+                    <!-- BOX 2 -->
+                    <div class="col-span-1 md:col-span-3 px-4 py-6 rounded-[1.25rem] bg-[#272829B2] flex">
+                        <div class="flex-1">
+                            <p class="text-[0.7rem] lg:text-[1rem] text-[#D9D9D9D9]">
+                                No two creators are the same, and neither are their styles. 
+                                Our AI learns from your inputs...
+                            </p>
+                            <h4 class="text-[1.2rem] md:text-[1.7rem] lg:text-[2.125rem]">
+                                Smart Adaptability
+                            </h4>
+                        </div>
+                        <img src="../assets/Images/Background.png" class="w-[4rem] h-[4rem]" />
+                    </div>
 
-    <!-- BOX 3 -->
-    <div class="col-span-1 md:col-span-3 px-4 py-6 rounded-[1.25rem] bg-[#272829B2] flex">
-        <div class="flex-1">
-            <p class="text-[0.7rem] lg:text-[1rem] text-[#D9D9D9D9]">
-                Design once, export anywhere... 
-            </p>
-            <h4 class="text-[1.2rem] md:text-[1.7rem] lg:text-[2.125rem]">
-                Multi-Format Export
-            </h4>
-        </div>
-        <img src="../assets/Images/Background.png" class="w-[4rem] h-[4rem]" />
-    </div>
+                    <!-- BOX 3 -->
+                    <div class="col-span-1 md:col-span-3 px-4 py-6 rounded-[1.25rem] bg-[#272829B2] flex">
+                        <div class="flex-1">
+                            <p class="text-[0.7rem] lg:text-[1rem] text-[#D9D9D9D9]">
+                                Design once, export anywhere... 
+                            </p>
+                            <h4 class="text-[1.2rem] md:text-[1.7rem] lg:text-[2.125rem]">
+                                Multi-Format Export
+                            </h4>
+                        </div>
+                        <img src="../assets/Images/Background.png" class="w-[4rem] h-[4rem]" />
+                    </div>
 
-    <!-- BOX 4 -->
-    <div class="col-span-1 md:col-span-2 p-4 rounded-[1.25rem] 
-                bg-[linear-gradient(164deg,rgba(39,40,41,1)_0%,rgba(39,40,41,1)_62%,rgba(255,60,0,1)_100%)] flex">
-        <div class="flex-1">
-            <p class="text-[0.7rem] lg:text-[1rem] text-[#D9D9D9D9]">
-                Say goodbye to repetitive tweaks and endless back-and-forths...
-            </p>
-            <h4 class="text-[1.2rem] md:text-[1.7rem] lg:text-[2.125rem]">
-                Seamless Revisions
-            </h4>
-        </div>
-        <img src="../assets/Images/Background.png" class="w-[4rem] h-[4rem]"/>
-    </div>
+                    <!-- BOX 4 -->
+                    <div class="col-span-1 md:col-span-2 p-4 rounded-[1.25rem] 
+                                bg-[linear-gradient(164deg,rgba(39,40,41,1)_0%,rgba(39,40,41,1)_62%,rgba(255,60,0,1)_100%)] flex">
+                        <div class="flex-1">
+                            <p class="text-[0.7rem] lg:text-[1rem] text-[#D9D9D9D9]">
+                                Say goodbye to repetitive tweaks and endless back-and-forths...
+                            </p>
+                            <h4 class="text-[1.2rem] md:text-[1.7rem] lg:text-[2.125rem]">
+                                Seamless Revisions
+                            </h4>
+                        </div>
+                        <img src="../assets/Images/Background.png" class="w-[4rem] h-[4rem]"/>
+                    </div>
 
-</div>
+                </div>
 
             </div>
         </div>

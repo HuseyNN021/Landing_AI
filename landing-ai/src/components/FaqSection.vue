@@ -53,30 +53,31 @@ const toggle = (index) => {
 </script>
 
 <template>
-  <section class="text-white w-full max-w-3xl mx-auto mt-10">
-    <div>
-        <h2 class="font-bold text-[2rem] md:text-[2.5rem] lg:text-[4rem] text-white w-[20rem] md:w-[29rem] lg:w-[37.5rem]">
+  <section class="text-white w-full max-w-3xl mx-auto mt-10 flex justify-center items-center">
+    <div class=" flex flex-col justify-center " >
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="font-bold text-[2rem] md:text-[2.5rem] lg:text-[4rem] text-white w-[20rem] md:w-[29rem] lg:w-[40.5rem] text-center">
             Frequently Asked Questions
         </h2>
         <p class="text-[0.7rem] md:text-[1rem] lg:text-[1.25rem] text-[#D9D9D9] w-[25rem] md:w-[37rem] lg:w-[48rem]">
             Got questions? We've got answers. Find everything you need to know about using our platform, plans, and features.
         </p>
-    </div>
-    <div
+      </div>
+      <div
       v-for="(item, i) in faq"
       :key="i"
       class="border-b border-white/20 py-4"
-    >
+      >
       <!-- Question -->
       <button
         @click="toggle(i)"
-        class="w-full flex justify-between items-center"
+        class="w-full flex justify-between items-center "
       >
-        <p class="text-xl font-semibold">{{ item.q }}</p>
+        <p class="text-md md:text-xl lg:text-2xl font-semibold">{{ item.q }}</p>
 
         <!-- Icon (rotates) -->
         <span
-          class="text-2xl transform transition-all duration-300 p-1"
+          class="text-md md:text-xl lg:text-2xl mr-3 transform transition-all duration-300 p-1"
           :class="item.open ? 'rotate-90' : 'rotate-0'"
         >
           ›
@@ -92,8 +93,9 @@ const toggle = (index) => {
           {{ item.a }}
         </p>
       </transition>
+      </div>
     </div>
-
+    
   </section>
 </template>
 

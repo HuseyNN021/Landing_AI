@@ -1,6 +1,25 @@
 <script setup>
+import { onMounted } from 'vue'
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import Button from '@/Reuseable/Button.vue';
 
-    import Button from '@/Reuseable/Button.vue';
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  gsap.from(".statsContent > div", {
+    scrollTrigger: {
+      trigger: ".statsContent",
+      start: "top 85%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power3.out"
+  })
+})
 </script>
 
 <template>
@@ -14,7 +33,7 @@
                      And the results? The numbers speak for themselves:
                 </p>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 place-items-center px-10">
+            <div class="statsContent grid grid-cols-2 lg:grid-cols-4 gap-10 place-items-center px-10">
                 <div class="flex flex-col">
                     <div class="text-white">
                         <h3 class="text-[2rem] md:text-[2.5rem] lg:text-[4rem] font-bold">
