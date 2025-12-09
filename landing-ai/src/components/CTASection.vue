@@ -25,7 +25,7 @@ onMounted(()=>{
 </script>
 
 <template>
-    <section  class="w-full">
+    <section id="ctaNav" class="w-full">
        <div
             class="flex justify-center items-center h-[70vh]
      bg-[linear-gradient(183deg,rgba(0,0,0,1)_0%,rgba(39,40,41,1)_65%,rgba(255,60,0,1)_100%)]            "

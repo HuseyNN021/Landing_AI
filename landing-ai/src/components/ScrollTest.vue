@@ -1,11 +1,12 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
 
-    <section class="text-white flex flex-col justify-center items-center mt-5">
+    <section  class="scrollSec text-white flex flex-col justify-center items-center mt-4">
 
-      
-        </div> -->
+ 
 
         <div class="wrapper w-[27rem] md:w-[60vw] lg:w-[81vw]  max-h-[70vh]  flex
          items-center overflow-x-auto">
@@ -42,7 +43,7 @@
                 </button> 
             </div>
 
-            <div class="item min-w-[25rem] transition ease-in hover:border hover:border-[#FF541F] max-w-[45vw] h-[23rem] md:h-[25rem] lg:h-[30rem] mr-3 text-center p-4 rounded-xl flex flex-col justify-between
+            <div class="item  transition ease-in hover:border hover:border-[#FF541F] min-w-[25rem] max-w-[45vw] h-[23rem] md:h-[25rem] lg:h-[30rem] mr-3 text-center p-4 rounded-xl flex flex-col justify-between
                        bg-[#272829B2]">
                 <div class="flex flex-col gap-4 text-left">
                     <p class="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem]">Pro</p>

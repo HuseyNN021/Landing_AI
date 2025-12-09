@@ -8,21 +8,7 @@ import ScrollTest from './ScrollTest.vue'
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(()=>{
-  gsap.from('.pricing',{
-    scrollTrigger: {
-      trigger: ".pricing",
-      start: "top 85%",
-      toggleActions: "play none none none"
-      // play = scroll-a çatanda animasiya et
-      // none = başqa heç nə etmə
-    },
-    duration: 0.9,
-    scale: 0.8,
-    opacity: 0,
-    y: 20,
-    stagger: 0.18,
-    ease: 'power3.out'
-  })
+ 
 
   gsap.from("#pricingId", {
     scrollTrigger:{
@@ -54,7 +40,7 @@ onMounted(()=>{
 </script>
 
 <template>
-    <section class="bg-cover bg-center bg-no-repeat"
+    <section id="pricingNav" class="bg-cover bg-center bg-no-repeat"
     :style="{ backgroundImage: `url(${containerImg})` }">
         <div class="flex flex-col justify-center items-center gap-5">
             <div class="flex flex-col justify-center items-center">

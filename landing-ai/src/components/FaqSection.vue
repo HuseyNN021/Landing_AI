@@ -1,31 +1,4 @@
-<!-- <script setup>
-import { ref } from 'vue';
-const toggle=ref(true)
-const toggleButton=()=>{
-    toggle.value=!toggle.value
-}
-</script>
 
-<template>
-
-    <section>
-        <div>
-            
-            <div class="text-white">
-                <div>
-                    <p>Question </p>
-                    <p :class="toggle?'hidden':'block'">Answer</p>
-                    <button @click="toggleButton">Clik</button>
-                </div>
-                <div>
-                    <p>Question </p>
-                    <p :class="toggle?'hidden':'block'">Answer</p>
-                    <button @click="toggleButton">Clik</button>
-                </div>
-            </div>
-        </div>
-    </section>
-</template> -->
 <script setup>
 import { ref } from "vue";
 
@@ -53,7 +26,7 @@ const toggle = (index) => {
 </script>
 
 <template>
-  <section class="text-white w-full max-w-3xl mx-auto mt-10 flex justify-center items-center">
+  <section id="faqSection" class="text-white w-full max-w-3xl mx-auto mt-10 flex justify-center items-center">
     <div class=" flex flex-col justify-center " >
       <div class="flex flex-col justify-center items-center">
         <h2 class="font-bold text-[2rem] md:text-[2.5rem] lg:text-[4rem] text-white w-[20rem] md:w-[29rem] lg:w-[40.5rem] text-center">

@@ -2,7 +2,22 @@
 import { gsap } from "gsap";
 import Button from '@/Reuseable/Button.vue';
 import { onMounted } from "vue";
+import ScrollTrigger from 'gsap/ScrollTrigger'
+// ScrollToPlugin kaydırma animasiyası üçün vacibdir.
+import ScrollToPlugin from 'gsap/ScrollToPlugin' 
 
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin) 
+
+function scrollToElement(id) {
+    gsap.to(window, {
+        duration: 1.2, // 👈 Animasiyanın sürəti (saniyə)
+        ease: "power2.inOut", // Animasiyanın növü
+        scrollTo: {
+            y: `#${id}`, // Hədəf ID-yə kaydır
+            offset: 0 // Hədəfdən neçə piksel yuxarıda dayanmaq (məsələn, sabit nav üçün)
+        }
+    });
+}
 
 onMounted(() => {
  
@@ -36,4 +51,5 @@ onMounted(() => {
             <Button class="bg-black border border-[#FCFCFC3B]" :text="'See Details'"/>
         </div>
     </section>
+    <div class="w-[3rem] h-[3rem] flex justify-center items-center z-1 cursor-pointer bg-[#FF541F] rounded-full fixed bottom-3 right-3" @click.prevent="scrollToElement('headerID')"><span class="text-2xl font-extrabold text-white"> ↑</span></div>
 </template>
