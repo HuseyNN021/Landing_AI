@@ -26,13 +26,13 @@ const toggle = (index) => {
 </script>
 
 <template>
-  <section id="faqSection" class="text-white w-full max-w-3xl mx-auto mt-10 flex justify-center items-center">
+  <section id="faqSection" class="text-white w-full max-w-3xl mx-auto mt-10 flex justify-center items-center pl-3">
     <div class=" flex flex-col justify-center " >
       <div class="flex flex-col justify-center items-center">
-        <h2 class="font-bold text-[2rem] md:text-[2.5rem] lg:text-[4rem] text-white w-[20rem] md:w-[29rem] lg:w-[40.5rem] text-center">
+        <h2 class="font-bold text-[2rem] md:text-[2.5rem] lg:text-[4rem] text-white w-[18rem] md:w-[29rem] lg:w-[40.5rem] text-center">
             Frequently Asked Questions
         </h2>
-        <p class="text-[0.7rem] md:text-[1rem] lg:text-[1.25rem] text-[#D9D9D9] w-[25rem] md:w-[37rem] lg:w-[48rem]">
+        <p class="text-[0.7rem] md:text-[1rem] lg:text-[1.25rem] text-[#D9D9D9] w-[22rem] md:w-[37rem] lg:w-[48rem]">
             Got questions? We've got answers. Find everything you need to know about using our platform, plans, and features.
         </p>
       </div>

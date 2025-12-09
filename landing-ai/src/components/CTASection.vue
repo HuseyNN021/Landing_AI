@@ -25,7 +25,7 @@ onMounted(()=>{
 </script>
 
 <template>
-    <section id="ctaNav" class="w-full">
+    <section id="ctaNav" class="w-full p-1">
        <div
             class="flex justify-center items-center h-[70vh]
      bg-[linear-gradient(183deg,rgba(0,0,0,1)_0%,rgba(39,40,41,1)_65%,rgba(255,60,0,1)_100%)]            "
@@ -35,7 +35,7 @@ onMounted(()=>{
                 <h2 class="font-bold text-[2rem] md:text-[2.5rem] lg:text-[4rem] text-white w-[20rem] md:w-[29rem] lg:w-[50rem]">
                     Ready to Design Smarter?
                 </h2>
-                <p class="text-[0.7rem] md:text-[1rem] lg:text-[1.25rem] text-[#D9D9D9] w-[25rem] md:w-[37rem] lg:w-[48rem]">
+                <p class="text-[0.7rem] md:text-[1rem] lg:text-[1.25rem] text-[#D9D9D9] w-[24rem] md:w-[37rem] lg:w-[48rem] pl-3">
                     Whether you're a freelancer, a team, or a growing agency—our tools adapt to your workflow. Design faster. Deliver better.       
                 </p>
                 <Button :text="'Get Started →'"/>

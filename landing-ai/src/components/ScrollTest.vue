@@ -4,14 +4,14 @@
 
 <template>
 
-    <section  class="scrollSec text-white flex flex-col justify-center items-center mt-4">
+    <section  class=" text-white flex flex-col justify-center items-center mt-4">
 
  
 
         <div class="wrapper w-[27rem] md:w-[60vw] lg:w-[81vw]  max-h-[70vh]  flex
          items-center overflow-x-auto">
             
-            <div class="item lg:hover:scale-105 transition ease-in hover:border hover:border-[#FF541F] min-w-[25rem] max-w-[45vw] h-[23rem] md:h-[25rem] lg:h-[27rem] mr-3 text-center p-4 rounded-xl flex flex-col justify-between
+            <div class="item lg:hover:scale-105 transition ease-in hover:border hover:border-[#FF541F] min-w-[23rem] max-w-[45vw] h-[23rem] md:h-[25rem] lg:h-[27rem] ml-3 mr-3 text-center p-4 rounded-xl flex flex-col justify-between
                         bg-[#272829B2]"> 
                 <div class="flex flex-col gap-4 text-left">
                     <p class="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem]">Pro</p>

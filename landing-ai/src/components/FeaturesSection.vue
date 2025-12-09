@@ -26,7 +26,7 @@ onMounted(()=>{
 
 <template>
 
-    <section class="w-full  ">
+    <section class="w-full pl-5 ">
         <div class="">
             <div class="flex items-center justify-center">
                 <div class="text-white w-[20rem] md:w-[30rem] lg:w-[45rem]">

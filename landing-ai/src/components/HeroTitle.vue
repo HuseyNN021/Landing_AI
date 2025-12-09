@@ -51,5 +51,5 @@ onMounted(() => {
             <Button class="bg-black border border-[#FCFCFC3B] !hover:bg-[#FF541F]" :text="'See Details'"/>
         </div>
     </section>
-    <div class="w-[3rem] h-[3rem] flex justify-center items-center z-1 cursor-pointer bg-[#FF541F] rounded-full fixed bottom-3 right-3" @click.prevent="scrollToElement('headerID')"><span class="text-2xl font-extrabold text-white"> ↑</span></div>
+    <div class="w-[3rem] h-[3rem] flex justify-center items-center z-1 cursor-pointer bg-[#FF541F] rounded-full fixed bottom-6 right-6" @click.prevent="scrollToElement('headerID')"><span class="text-2xl font-extrabold text-white"> ↑</span></div>
 </template>
