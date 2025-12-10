@@ -9,7 +9,7 @@
 
         <div class="wrapper w-full md:w-[60vw] lg:w-[81vw] flex items-center overflow-x-auto gap-3 md:gap-4 lg:gap-6 px-2 md:px-4 lg:px-6">
             
-            <div class="item lg:hover:scale-105 transition ease-in hover:border hover:border-[#FF541F] min-w-[85vw] md:min-w-[25rem] lg:min-w-[28rem] h-[23rem] md:h-[25rem] lg:h-[27rem] text-center p-4 rounded-xl flex flex-col justify-between bg-[#272829B2]"> 
+            <div class="item lg:hover:scale-105 transition ease-in hover:border hover:border-[#FF541F] min-w-[23rem] md:min-w-[25rem] lg:min-w-[25vw] h-[23rem] md:h-[25rem] lg:h-[27rem] text-center p-4 rounded-xl flex flex-col justify-between bg-[#272829B2]"> 
                 <div class="flex flex-col gap-4 text-left">
                     <p class="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem]">Pro</p>
                     <p class="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem]">
@@ -40,7 +40,7 @@
                 </button> 
             </div>
 
-            <div class="item transition ease-in hover:border hover:border-[#FF541F] min-w-[85vw] md:min-w-[25rem] lg:min-w-[28rem] h-[23rem] md:h-[25rem] lg:h-[27rem] text-center p-4 rounded-xl flex flex-col justify-between bg-[#272829B2]">
+            <div class="item transition ease-in hover:border hover:border-[#FF541F] min-w-[23rem] md:min-w-[25rem] lg:min-w-[25vw] h-[23rem] md:h-[25rem] lg:h-[27rem] text-center p-4 rounded-xl flex flex-col justify-between bg-[#272829B2]">
                 <div class="flex flex-col gap-4 text-left">
                     <p class="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem]">Pro</p>
                     <p class="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem]">
@@ -71,7 +71,7 @@
                 </button> 
             </div>
 
-            <div class="item lg:hover:scale-105 transition ease-in hover:border hover:border-[#FF541F] min-w-[85vw] md:min-w-[25rem] lg:min-w-[28rem] h-[23rem] md:h-[25rem] lg:h-[27rem] text-center p-4 rounded-xl flex flex-col justify-between bg-[#272829B2]">
+            <div class="item lg:hover:scale-105 transition ease-in hover:border hover:border-[#FF541F] min-w-[23rem] md:min-w-[25rem] lg:min-w-[25vw] h-[23rem] md:h-[25rem] lg:h-[27rem] text-center p-4 rounded-xl flex flex-col justify-between bg-[#272829B2]">
                 <div class="flex flex-col gap-4 text-left">
                     <p class="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem]">Pro</p>
                     <p class="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem]">
