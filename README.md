@@ -52,7 +52,7 @@ Bu layihəni yerli maşınınızda işə salmaq üçün aşağıdakı addımlar�
 
 1.  **Repo-nu Klonlayın:**
     ```bash
-    git clone [Sizin GitHub Repo Adresiniz]
+    git clone https://github.com/HuseyNN021/Landing_AI.git
     cd automate-intelligence-landing-page
     ```
 2.  **Asılılıqları Quraşdırın:**
