@@ -59,7 +59,7 @@ onMounted(()=>{
      
             
         </div>
+        <ScrollTest/>
     </section>
-         <ScrollTest/>
     
 </template>

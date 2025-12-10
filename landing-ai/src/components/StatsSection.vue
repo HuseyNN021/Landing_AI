@@ -30,7 +30,7 @@ onMounted(() => {
                 <p class="w-[20rem] md:w-[35rem] lg:w-[50rem] font-bold text-[0.7rem] md:text-[1rem] lg:text-[1.7rem] ">
                     Whether you're designing for personal projects, creative teams, or large-scale campaigns,
                      our AI-powered platform is built to bring your ideas to life—quickly, beautifully, and intelligently.
-                     And the results? The numbers speak for themselves:
+                    And the results? The numbers speak for themselves:
                 </p>
             </div>
             <div class="statsContent grid grid-cols-2 lg:grid-cols-4 gap-10 place-items-center px-10">

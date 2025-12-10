@@ -26,22 +26,6 @@ function scrollToElement(id) {
 // ----------------------------------------------------------------
 
 
-onMounted(() => {
-    // Sizin mövcud GSAP ScrollTrigger animasiyanız
-    gsap.from('.wrapper > div', {
-        scrollTrigger: {
-            trigger: "#scrollId",
-            start: "top 85%",
-            toggleActions: "play none none none"
-        },
-        duration: 0.9,
-        scale: 0.8,
-        opacity: 0,
-        y: 20,
-        stagger: 0.18,
-        ease: 'power3.out'
-    })
-})
 </script>
 
 <template>

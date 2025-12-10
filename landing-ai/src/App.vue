@@ -8,7 +8,6 @@ import PricingSection from './components/PricingSection.vue';
 import FaqSection from './components/FaqSection.vue';
 import CTASection from './components/CTASection.vue';
 import Footer from './components/Footer.vue';
-import ScrollTest from './components/ScrollTest.vue';
 </script>
 
 <template>
@@ -26,7 +25,6 @@ import ScrollTest from './components/ScrollTest.vue';
     <FaqSection/>
     <CTASection/>
     <Footer/>
-    <!-- <ScrollTest/> -->
 </template>
 
 <style scoped>
